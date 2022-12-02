@@ -1,6 +1,8 @@
-main() {
-  var firstName = 'Tosin'; 
-  String lastName = 'Ezekiel'; 
+// input-output demo code
+import 'dart:io';
 
-  print('This is the result: ${firstName}')
+main() {
+  stdout.writeln('What is my name');
+  String? name = stdin.readLineSync();
+  print('My name is $name');
 }
