@@ -1,3 +1,6 @@
 DART: The libraries - the common ones
 1. dart:core - built in types, collections and other core functionality for every dart programming
 2. dart:collection - for collection types e.g queues, linked lists, hashmaps and binary trees. 
+3. dart:convert - encoders and decorders for converting between diff. data rep. including json and utf-8
+4. dart:math - mathematical constants and functions and random number generations
+5. dart:io - file,socket,http and other i/o support for non-web applications
