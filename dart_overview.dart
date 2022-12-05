@@ -10,4 +10,13 @@ void main() async {
 Stream<double> computePi({int batch = 10000}) async* {
   var total = 0;
   var count = 0;
+
+  while (true) {
+    final points = generateRandom().take(batch);
+    final insdie = points.where((p) => p.isInsideUnitCircle);
+
+    total += batch;
+    count += inside.length;
+    final ratio = count / total;
+  }
 }
