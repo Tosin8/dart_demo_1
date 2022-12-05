@@ -10,3 +10,6 @@ DART: The libraries - the common ones
 1. Everything being placed in a variable is an OBJECT,and every object is an instance of a CLASS. 
 2. CONDITIONAL EXPRESSION :  ' express condition ? expr1: expr2 ' 
 3. VARIABLES : var name = 'bob'; ( variable store references)
+4. LATE VARIABLES: late modifier , having two use cases - * declaring a non nullable variable that's initialized after its' declaration. * lazily initializing a variable. 
+    DISCLAIMER: if a variable is set before it's used but dart disagrees, it can be fixed by marking the variable as LATE. 
+5. FINAL AND CONST : using final and const when never intending to change a variable. A final can be set only once, a const is a compile time constant - const variables are implicitly final. 
