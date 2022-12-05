@@ -13,3 +13,12 @@ DART: The libraries - the common ones
 4. LATE VARIABLES: late modifier , having two use cases - * declaring a non nullable variable that's initialized after its' declaration. * lazily initializing a variable. 
     DISCLAIMER: if a variable is set before it's used but dart disagrees, it can be fixed by marking the variable as LATE. 
 5. FINAL AND CONST : using final and const when never intending to change a variable. A final can be set only once, a const is a compile time constant - const variables are implicitly final. 
+6. BUILT IN TYPES : 
+    1. Numbers (int, double)
+    2. Strings(String)
+    3. Booleans(bool)
+    4. Lists(List, also known as arrays)
+    5. Sets(Set)
+    6. Maps(Map)
+    7. Symbols(Symbol)
+    8. Runes(Runes - often replaced by the characters API)
