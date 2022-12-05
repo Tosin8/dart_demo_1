@@ -1,2 +1,3 @@
-"EFFECTIVE DART"
-1. 
+DART: The libraries - the common ones
+1. dart:core - built in types, collections and other core functionality for every dart programming
+2. dart:collection - for collection types e.g queues, linked lists, hashmaps and binary trees. 
