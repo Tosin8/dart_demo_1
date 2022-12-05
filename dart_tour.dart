@@ -6,7 +6,7 @@ void printInteger(int aNumber) {
 }
 
 void main() {
-  // point where the app starts executing
+  // point where the app starts executing. The main is a required top level function where app execution starts.
   var number = 42;
   printInteger(number);
 }
