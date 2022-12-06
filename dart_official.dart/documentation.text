@@ -51,3 +51,6 @@ Example:
 SETS 
 It's an unorderd  collection of unique items. Example: var halogens = {'flourine', 'bromine', 'ioodine' , 'chlorine'}
 Disclaimer: It infers that halogens has the type Set<String>. 
+
+MAPS 
+It's an object that associates keys and values, tending to be of any type of object. 
