@@ -13,3 +13,10 @@
  late variables - having two classes:  Declaring a non nullable variable that's initializes after its' declaration and  lazily initializing a variable. 
 
  Built-in types : Numbers(int, double), Strings(String), Booleans(bool), Lists(List - also known as array), Sets(Set), Maps(Map), Runes(Runes - often replaced by the character API), Symbols(Symbol), The value null (Null).   
+
+ Special roles in the dart language: 
+ 1. object: the superclass of all dart classes except null
+ 2. enum: the superclass of all enums
+ 3. future and stream: used in asynchrony support. 
+ 4. iterable: used in for in loops and in synchronous generator functions.
+ 5. 
