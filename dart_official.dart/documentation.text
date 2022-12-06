@@ -49,3 +49,5 @@ Example:
   * COLLECTION FOR : var listOfInts = [1,2,3] , var listOfStrings = ['#0, for(var i in listOfInts) '#$i']; 
 
 SETS 
+It's an unorderd  collection of unique items. Example: var halogens = {'flourine', 'bromine', 'ioodine' , 'chlorine'}
+Disclaimer: It infers that halogens has the type Set<String>. 
