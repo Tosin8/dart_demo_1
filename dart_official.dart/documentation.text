@@ -29,3 +29,7 @@
  STRINGS
 1. Disclaimer: double quotes work best. E.g: "It's even easier to use the other delimeter". 
 2. To get the string corresponding to an object, dart calls the objects toString() method.  eg. get.toUpperCase()
+3. Strings can be concatenated using the + operator. 
+4. Using raw string ( var s= r'In the beginning.')
+
+BOOLEANS 
