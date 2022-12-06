@@ -1,0 +1,2 @@
+ VOID - A special type that indicates a value that's never used.
+ $variableName / ${expression} - String interpolation. 
