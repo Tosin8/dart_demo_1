@@ -23,4 +23,9 @@
  6. void: indicates that a value is never used, often used as a return type. 
 
 
- Numbers - they tends to be of two flavors : int and double. 
+ NUMBERS
+ They tends to be of two flavors : int and double. 
+
+ STRINGS
+1. Disclaimer: double quotes work best. E.g: "It's even easier to use the other delimeter". 
+2. To get the string corresponding to an object, dart calls the objects toString() method.  eg. get.toUpperCase()
