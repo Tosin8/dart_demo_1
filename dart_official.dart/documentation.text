@@ -36,3 +36,16 @@ BOOLEANS
 1. The type name is bool, having two types which are - true and false. 
 
 LISTS 
+1. var list = [1, 2,3]; - list for integers ( List<int> )
+2. var lsit = ['hello', 'world', 'how you doing']
+Note:
+* Lists uses the zero based indexing, where 0 is the index of the first value and list.length - 1 is the index of the last value. 
+* Using the .length property and access a lists' value using the subscript operator [] 
+* Using spread operator(...) and the null aware spead operator(...?) which provide a concise way to insert multiple values into a collection. Example: var list = [1,2,3] var list2 = [0, ...list] 
+    Note: If the expression to the right of the spread operator might be null, to avoid exceptions , by using the null aware spread operator(...?) Example: var list2 = [ 0, ...?list]; 
+* Using COLLECTION IF ( to create a list with three or four items in it ) and COLLECTION FOR ( to manipulate the items of a list before adding them to another list ), using to build collections using the conditional -if and repetition -for. 
+Example: 
+  * COLLECTION IF : var nav = ['home', 'furniture', 'plants' , if(promoActive) 'Outlets']; 
+  * COLLECTION FOR : var listOfInts = [1,2,3] , var listOfStrings = ['#0, for(var i in listOfInts) '#$i']; 
+
+SETS 
