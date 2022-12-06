@@ -33,3 +33,6 @@
 4. Using raw string ( var s= r'In the beginning.')
 
 BOOLEANS 
+1. The type name is bool, having two types which are - true and false. 
+
+LISTS 
