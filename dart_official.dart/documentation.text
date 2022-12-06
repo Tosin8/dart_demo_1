@@ -1,2 +1,15 @@
+ // LANGUAGE TOUR
+ 
  VOID - A special type that indicates a value that's never used.
  $variableName / ${expression} - String interpolation. 
+ main() - a special required top level function where app execution starts. 
+
+ Disclaimer - 
+ 1. Everything being place in a variable is an object, and every object is an instance of a class. 
+ 2. Dart supports generic types,like List<int> - a list of integers, or List<object> - a list of objects of any type. 
+ 3. Dart has both expressions - having runtime value and statements.  Example: conditional expression - CONDITION ? EXPR1: EXPR2 has a value of expression 1 or expression 2. 
+ 4. It reports two kinds of problems : warnings and errors.
+
+ late variables - having two classes:  Declaring a non nullable variable that's initializes after its' declaration and  lazily initializing a variable. 
+
+ Built-in types : Numbers(int, double), Strings(String), Booleans(bool), Lists(List - also known as array), Sets(Set), Maps(Map), Runes(Runes - often replaced by the character API), Symbols(Symbol), The value null (Null).   
