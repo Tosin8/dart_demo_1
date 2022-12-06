@@ -19,4 +19,8 @@
  2. enum: the superclass of all enums
  3. future and stream: used in asynchrony support. 
  4. iterable: used in for in loops and in synchronous generator functions.
- 5. 
+ 5. dynamic: indicatesthat being able to disable static checking. 
+ 6. void: indicates that a value is never used, often used as a return type. 
+
+
+ Numbers - they tends to be of two flavors : int and double. 
