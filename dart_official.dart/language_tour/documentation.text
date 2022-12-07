@@ -56,3 +56,14 @@ MAPS
 It's an object that associates keys and values, tending to be of any type of object. 
 Example: var gifts = { 'first' : 'partidge', 'second' : 'golden rings' } , var nobleGases = { 2: 'helieum' , 10: 'neon' } // Key : Value 
 Map<String, String> , Map<int, String> 
+
+// Creating the same objects using a Map constructor: 
+var gifts = Map<String, String>(); 
+gifts['first'] = 'hello'; 
+gifts['second'] = 'world'; 
+
+var nobleGases = Map<int, String>(); 
+nobleGases[2] = 'hello'; 
+nobleGases[18] = 'world'; 
+
+FUNCTIONS 
