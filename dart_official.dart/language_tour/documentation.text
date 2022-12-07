@@ -54,4 +54,5 @@ Disclaimer: It infers that halogens has the type Set<String>.
 
 MAPS 
 It's an object that associates keys and values, tending to be of any type of object. 
-Example: var gifts = { 'first' : 'partidge', 'second' : 'golden rings' } // Key : Value 
+Example: var gifts = { 'first' : 'partidge', 'second' : 'golden rings' } , var nobleGases = { 2: 'helieum' , 10: 'neon' } // Key : Value 
+Map<String, String> , Map<int, String> 
