@@ -1,2 +1,10 @@
 // EFFECTIVE Dart
 
+1. The Guides 
+
+* Style guide : defining the rules of laying out and organizing code. Example: camelCase, using_underscores etc
+* Documentation guide : tells everything about what goes inside comments. 
+* Design guide: the softest guide, learn Designing consistent, usable API for libraries. 
+
+2. Style
+* Identifiers comes in 3 flavors in dart :  UpperCamelCases , lowerCamelCase, lower_with_underscores. 
