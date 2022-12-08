@@ -116,3 +116,16 @@ FUNCTIONS
     assert(int.parse(arguments[0]) == 1); 
     assert(arguments[1] == 'test'); 
   }
+
+  Note: functions can be passed as a parameter to another function. 
+  Example: void printElement(int element) {
+    print(element); 
+  }
+  var list = [1,2,3]; 
+  // pass printElement as a parameter. 
+
+OPERATORS 
+ 1. Unary postfix : expr++, expr--
+ 2. Unary prefix: ++expr, --expr
+ 3. Bitwise AND : & 
+ 4. Bitwise OR: | 
