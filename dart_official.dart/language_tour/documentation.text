@@ -260,7 +260,31 @@ CONTROL FLOW STATEMENTS
    }
 
  2. for loops - iterable with the standard of loop. 
- 3. while and do-while loops
+
+    Example: 
+    var message = StringBuffer('Dart is fun'); 
+    for (var i = 0; i < 5; i++) {
+      message.write('!'); 
+    }
+  
+  iterable classes can also have a FOREACH method as another option.
+     Example: 
+     var collection = [1,2,3]; 
+     collection.forEach(print); 
+
+ 3. while and do-while loops - a WHILE loop evaluates the condition before the loop, 
+    while DO-WHILE loop evaluates the condition after the loop. 
+
+    // while loop
+    while(!isDone()) {
+      doSomething(); 
+    }
+    
+    // do-while loop
+    do{
+      printLine(); 
+    } while (!atEndOfPage()); 
+
  4. break and continue
  5. switch and case 
  6. assert 
