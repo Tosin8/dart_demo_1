@@ -137,3 +137,10 @@ OPERATORS
  10. Conditional: expr1 ? expr2: expr3
  11. Cascade: .. , ?..
  12. Assignment: =, *=, /= , -=, etc
+
+ ARITHMETIC OPERATORS
+  1. Add: +
+  2. Subtract: -
+  3. Divide : / 
+  4. Divide, return an integer result : ~/
+  5. Remainder of an integer division ( modulo ) : % 
