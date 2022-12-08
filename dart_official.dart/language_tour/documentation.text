@@ -67,3 +67,4 @@ nobleGases[2] = 'hello';
 nobleGases[18] = 'world'; 
 
 FUNCTIONS 
+Dart is a true object oriented language, functions are objects and have a type. 
