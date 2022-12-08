@@ -234,5 +234,23 @@ CONDITIONAL EXPRESSIONS
 CASCADE NOTATION 
  Making of creating a temporary variable. 
 
- Exanoke 
+ Example: 
+  var paint = Paint()
+    ..color = Colors.black
+    ..strokeCap = StrokeCap.round
+    ..strokeWidth = 5.0 
+
+  Not using the Cascade notation
+   var paint = Paint(); 
+   paint.color = Colors.black; 
+   paint.strokeCap = StrokeCap.round; 
+   paint.strokeWidth = 5.0; 
+
+CONTROL FLOW STATEMENTS 
+ 1. If and else
+ 2. for loops
+ 3. while and do-while loops
+ 4. break and continue
+ 5. switch and case 
+ 6. assert 
  
