@@ -201,3 +201,17 @@ TYPE TEST OPERATORS
   1. !expr: inverts the expression ( changes false to true, and vice-versa)
   2. || : logical OR
   3. && : logical AND 
+
+  Example: 
+  if(!done && (col == 0  || col == 3)) {
+    // ... Do something.... 
+  }
+
+CONDITIONAL EXPRESSIONS 
+ Two conditions for the if-else statements: 
+  * condition ? expr1 : expr2  ( evaluates expr1 and returns its value, otherwise evaluates and returns the value of expr2). 
+
+  Example: 
+  var visibility = isPublic ? 'public' : 'private'; 
+  * expr1 ?? expr2 ( if expr1 is non-null returns its value, otherwise evaluates and returns the value of expr2). 
+ 
