@@ -152,3 +152,27 @@ PREFIX AND POSTFIX INCREMENT AND DECREMENT OPERATORS
  4. var--: var = var - 1 ( expression value is var)
 
  Example: 
+  int a; 
+  int b; 
+
+  a = 0; 
+  b = ++a; // Increment a before b gets its balue. 
+  assert(a == b); // 1 == 1 
+
+  a = 0; 
+  b = a++; // Increment a after b gets its value
+  assert(a != b); 1 != 0 
+
+  a = 0; 
+  b = a--; // decrement a after b gets its value
+  assert(a != b); // -1 != 0
+
+  a = 0; 
+  b = --a; // decrement a before b gets its value
+  assert(a == b);  // -1 == -1 
+
+TYPE TEST OPERATORS
+ The as,is and is! operators are handy for checking types at runtime. 
+ 1. as : typecast
+ 2. is : true if the object has the specified type
+ 3. is! : true if the object doesn't have the specified type. 
