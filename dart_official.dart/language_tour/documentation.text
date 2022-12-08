@@ -210,8 +210,29 @@ TYPE TEST OPERATORS
 CONDITIONAL EXPRESSIONS 
  Two conditions for the if-else statements: 
   * condition ? expr1 : expr2  ( evaluates expr1 and returns its value, otherwise evaluates and returns the value of expr2). 
-
   Example: 
   var visibility = isPublic ? 'public' : 'private'; 
-  * expr1 ?? expr2 ( if expr1 is non-null returns its value, otherwise evaluates and returns the value of expr2). 
+
+  * expr1 ?? expr2 ( if expr1 is non-null returns its value, otherwise evaluates and returns the value of expr2).
+  Example: 
+  String playerName(String? name) => name ?? 'Guest';  
+  Example: 
+
+  // Slightly longer version usiing ?: operator
+  String playerName(String? name) => name != null ? name : 'Guest'; 
+
+  // Very long version using the if-else statement. 
+  String playerName(String? name) {
+    if(name != null) {
+      return name; 
+    } else {
+      return 'Guest'; 
+    }
+  }
+
+
+CASCADE NOTATION 
+ Making of creating a temporary variable. 
+
+ Exanoke 
  
