@@ -195,3 +195,9 @@ TYPE TEST OPERATORS
    a = value; 
    // assign value to B if B is null, otherwise B stays the same
    b ??= value; 
+
+
+  LOGICAL OPERATORS
+  1. !expr: inverts the expression ( changes false to true, and vice-versa)
+  2. || : logical OR
+  3. && : logical AND 
