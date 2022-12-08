@@ -88,8 +88,31 @@ FUNCTIONS
  1. Note: the function will still work if data type is ommitted, case study: omit bool in the funciton above. 
  2. The shorthand for {return expr;} is => notation. 
 
-* PARAMETERS - a function can have any number of required positional parameters. 
+ * PARAMETERS - a function can have any number of required positional parameters. 
   They can either be followed by 'named parameters' or by 'optioinal positional    parameters'. 
-  
-* NAMED PARAMETERS - they are optional unless they're explicitly marked as required. 
-When calling a function, specify named arguments using paramName: value 
+
+ * NAMED PARAMETERS - they are optional unless they're explicitly marked as required. 
+  When calling a function, specify named arguments using paramName: value
+  Example: enableFlags(bold: true, hidden: false);
+
+  Named parameters jto be mandatory - annotate with 'required' . 
+  const Scrollbar({super.key, required Widget child}); 
+
+  Optional positional parameters - wrapping a set of functions parameters in [] marks them as optional positional parameters. 
+
+ THE MAIN() FUNCTION
+ Every app must have a top level main() function which serves as the entrypoint to the app.  
+
+  Simple main() function: 
+  void main() {
+    print('hello world'); 
+  }
+
+  main() function that takes arguments: 
+  void main(List<String> arguments) {
+    print(arguments); 
+
+    assert(arguments.length == 2); 
+    assert(int.parse(arguments[0]) == 1); 
+    assert(arguments[1] == 'test'); 
+  }
