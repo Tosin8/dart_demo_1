@@ -175,4 +175,23 @@ TYPE TEST OPERATORS
  The as,is and is! operators are handy for checking types at runtime. 
  1. as : typecast
  2. is : true if the object has the specified type
- 3. is! : true if the object doesn't have the specified type. 
+ 3. is! : true if the object doesn't have the specified type.
+
+ Example: 
+ * Using the AS operator to cast an object to a particular type if and only if you are sure that the object is of that type. 
+   (employee as Person).firstName = 'Bob'; 
+
+  *  Using the IS operator of an object not being sure of. 
+   If (employee is Person) {
+    // type checking
+    employee.firstName = 'Bob'; 
+   }
+
+  ASSIGNMENT OPERATORS
+   Using the ??= operator, if the assigned to variable is null. 
+   
+   Example: 
+   // assign value to A
+   a = value; 
+   // assign value to B if B is null, otherwise B stays the same
+   b ??= value; 
