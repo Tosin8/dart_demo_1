@@ -129,3 +129,11 @@ OPERATORS
  2. Unary prefix: ++expr, --expr
  3. Bitwise AND : & 
  4. Bitwise OR: | 
+ 5. Relational and type test: >=, > , <=, < 
+ 6. equality: == , != 
+ 7. logical AND: &&
+ 8. logical OR: ||
+ 9. If null: ??
+ 10. Conditional: expr1 ? expr2: expr3
+ 11. Cascade: .. , ?..
+ 12. Assignment: =, *=, /= , -=, etc
