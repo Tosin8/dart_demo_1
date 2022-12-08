@@ -248,7 +248,18 @@ CASCADE NOTATION
 
 CONTROL FLOW STATEMENTS 
  1. If and else
- 2. for loops
+   
+   Example: 
+   if(isRaining()) {
+    you.bringRainCoat(); 
+
+   } else if(isSnowing()){
+    you.wearJacket(); 
+   } else {
+    car.putTopDown(); 
+   }
+
+ 2. for loops - iterable with the standard of loop. 
  3. while and do-while loops
  4. break and continue
  5. switch and case 
