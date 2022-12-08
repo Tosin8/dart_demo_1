@@ -144,3 +144,11 @@ OPERATORS
   3. Divide : / 
   4. Divide, return an integer result : ~/
   5. Remainder of an integer division ( modulo ) : % 
+
+PREFIX AND POSTFIX INCREMENT AND DECREMENT OPERATORS
+ 1. ++var: var = var+1 ( expression value is var + 1)
+ 2. var++ : var = var+1 ( expression value is var)
+ 3. --var: var= var-1 ( expression value is var - 1)
+ 4. var--: var = var - 1 ( expression value is var)
+
+ Example: 
