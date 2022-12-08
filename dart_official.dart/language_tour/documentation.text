@@ -4,17 +4,27 @@
  $variableName / ${expression} - String interpolation. 
  main() - a special required top level function where app execution starts. 
 
- Disclaimer - 
+Disclaimer - 
  1. Everything being place in a variable is an object, and every object is an instance of a class. 
  2. Dart supports generic types,like List<int> - a list of integers, or List<object> - a list of objects of any type. 
- 3. Dart has both expressions - having runtime value and statements.  Example: conditional expression - CONDITION ? EXPR1: EXPR2 has a value of expression 1 or expression 2. 
+ 3. Dart has both expressions - having runtime value and statements. 
+ Example: conditional expression - CONDITION ? EXPR1: EXPR2 has a value of expression 1 or expression 2.  
  4. It reports two kinds of problems : warnings and errors.
 
  late variables - having two classes:  Declaring a non nullable variable that's initializes after its' declaration and  lazily initializing a variable. 
 
- Built-in types : Numbers(int, double), Strings(String), Booleans(bool), Lists(List - also known as array), Sets(Set), Maps(Map), Runes(Runes - often replaced by the character API), Symbols(Symbol), The value null (Null).   
+ Built-in types : 
+     * Numbers(int, double), 
+     * Strings(String),
+     * Booleans(bool),
+     *  Lists(List - also known as array),
+     *  Sets(Set), 
+     * Maps(Map), 
+     * Runes(Runes - often replaced by the character API),
+     *  Symbols(Symbol), 
+     * The value null (Null).   
 
- Special roles in the dart language: 
+Special roles in the dart language: 
  1. object: the superclass of all dart classes except null
  2. enum: the superclass of all enums
  3. future and stream: used in asynchrony support. 
@@ -23,48 +33,63 @@
  6. void: indicates that a value is never used, often used as a return type. 
 
 
- NUMBERS
+NUMBERS
  They tends to be of two flavors : int and double. 
 
- STRINGS
+STRINGS
 1. Disclaimer: double quotes work best. E.g: "It's even easier to use the other delimeter". 
 2. To get the string corresponding to an object, dart calls the objects toString() method.  eg. get.toUpperCase()
 3. Strings can be concatenated using the + operator. 
 4. Using raw string ( var s= r'In the beginning.')
 
 BOOLEANS 
-1. The type name is bool, having two types which are - true and false. 
+ 1. The type name is bool, having two types which are - true and false. 
 
 LISTS 
-1. var list = [1, 2,3]; - list for integers ( List<int> )
-2. var lsit = ['hello', 'world', 'how you doing']
-Note:
-* Lists uses the zero based indexing, where 0 is the index of the first value and list.length - 1 is the index of the last value. 
-* Using the .length property and access a lists' value using the subscript operator [] 
-* Using spread operator(...) and the null aware spead operator(...?) which provide a concise way to insert multiple values into a collection. Example: var list = [1,2,3] var list2 = [0, ...list] 
+ 1. var list = [1, 2,3]; - list for integers ( List<int> )
+ 2. var lsit = ['hello', 'world', 'how you doing']
+
+ Note:
+ * Lists uses the zero based indexing, where 0 is the index of the first value and list.length - 1 is the index of the last value. 
+ * Using the .length property and access a lists' value using the subscript operator [] 
+ * Using spread operator(...) and the null aware spead operator(...?) which provide a concise way to insert multiple values into a collection. 
+ Example: var list = [1,2,3] var list2 = [0, ...list] 
     Note: If the expression to the right of the spread operator might be null, to avoid exceptions , by using the null aware spread operator(...?) Example: var list2 = [ 0, ...?list]; 
-* Using COLLECTION IF ( to create a list with three or four items in it ) and COLLECTION FOR ( to manipulate the items of a list before adding them to another list ), using to build collections using the conditional -if and repetition -for. 
-Example: 
+  * Using COLLECTION IF ( to create a list with three or four items in it ) and COLLECTION FOR ( to manipulate the items of a list before adding them to another list ), using to build collections using the conditional -if and repetition -for. 
+  Example: 
   * COLLECTION IF : var nav = ['home', 'furniture', 'plants' , if(promoActive) 'Outlets']; 
   * COLLECTION FOR : var listOfInts = [1,2,3] , var listOfStrings = ['#0, for(var i in listOfInts) '#$i']; 
 
 SETS 
-It's an unorderd  collection of unique items. Example: var halogens = {'flourine', 'bromine', 'ioodine' , 'chlorine'}
-Disclaimer: It infers that halogens has the type Set<String>. 
+ It's an unorderd  collection of unique items. Example: var halogens = {'flourine', 'bromine', 'ioodine' , 'chlorine'}
+ Disclaimer: It infers that halogens has the type Set<String>. 
 
 MAPS 
-It's an object that associates keys and values, tending to be of any type of object. 
-Example: var gifts = { 'first' : 'partidge', 'second' : 'golden rings' } , var nobleGases = { 2: 'helieum' , 10: 'neon' } // Key : Value 
-Map<String, String> , Map<int, String> 
+ It's an object that associates keys and values, tending to be of any type of object. 
+ Example: var gifts = { 'first' : 'partidge', 'second' : 'golden rings' } ,
+ var nobleGases = { 2: 'helieum' , 10: 'neon' } // Key : Value 
+ Map<String, String> , Map<int, String> 
 
 // Creating the same objects using a Map constructor: 
-var gifts = Map<String, String>(); 
-gifts['first'] = 'hello'; 
-gifts['second'] = 'world'; 
+ var gifts = Map<String, String>(); 
+ gifts['first'] = 'hello'; 
+ gifts['second'] = 'world'; 
 
-var nobleGases = Map<int, String>(); 
-nobleGases[2] = 'hello'; 
-nobleGases[18] = 'world'; 
+ var nobleGases = Map<int, String>(); 
+ nobleGases[2] = 'hello'; 
+ nobleGases[18] = 'world'; 
 
 FUNCTIONS 
-Dart is a true object oriented language, functions are objects and have a type. 
+ Dart is a true object oriented language, functions are objects and have a type. 
+   Example: 
+     bool isNoble(int atomicNumber){
+      return _nobleGases[atomicNumber] != null; 
+     }
+ 1. Note: the function will still work if data type is ommitted, case study: omit bool in the funciton above. 
+ 2. The shorthand for {return expr;} is => notation. 
+
+* PARAMETERS - a function can have any number of required positional parameters. 
+  They can either be followed by 'named parameters' or by 'optioinal positional    parameters'. 
+  
+* NAMED PARAMETERS - they are optional unless they're explicitly marked as required. 
+When calling a function, specify named arguments using paramName: value 
