@@ -357,4 +357,11 @@ CONTROL FLOW STATEMENTS
         }
  6. assert - it is used when debugging code, letting you test if a condition in the code returns TRUE , if not the program will 
               raise an AssertionError. 
- 
+  
+  When do assertion works? though it depends on the tools and the framework being used: 
+     1. Flutter enables assertions in DEBUG MODE. 
+     2. Development only tools such as [webdev serve] typically enable assertions by default. 
+     3. Some tools such as dart run and [dart compile js] support assertions through a command line flag: -- enalble-asserts. 
+
+
+EXCEPTIONS 
