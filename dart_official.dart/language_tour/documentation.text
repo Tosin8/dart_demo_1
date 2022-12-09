@@ -286,12 +286,74 @@ CONTROL FLOW STATEMENTS
     } while (!atEndOfPage()); 
 
  4. break and continue - using BREAK to stop looping and CONTINUE to skip to the next iteration.  
-     Example: 
+     Example: - BREAK
      
      while (true) {
       if (shutDownRequested()) break; 
       processIncomingRequests(); 
      }
+
+     Example: - CONTINUE
+
+     for (int i= 0 ; i < candidates.length; i++) {
+      var candidate = candidates[i]; 
+      if (candidate.yearsExperience < 5) {
+        continue; 
+      }
+      candidate.interview(); 
+     }
+
  5. switch and case 
+     Valid ways to end a non empty case clause are a CONTINUE, THROW or RETURN statement. 
+
+     Example: 
+     1. Using a DEFAULT class to run code when no CASE clause matches: 
+       
+       var command = 'OPEN'; 
+       switch (command) {
+        case 'CLOSED': 
+          executeClosed(); 
+          break; 
+        case 'PENDING': 
+          executePending(); 
+          break; 
+        case 'APPROVED': 
+          executeApproved(); 
+          break; 
+        case 'DENIED': 
+         executeDenied(); 
+          break; 
+        case 'OPEN': 
+         executeOpen(); 
+          break; 
+        default: 
+          executeUnknown();  
+       }
+
+    Note: Dart support empty case clause, allowing a form of fall through. 
+        var command = 'CLOSED'; 
+        switch (command) {
+          case 'CLOSED': // empty case falls through. 
+          case 'NOW_CLOSED': 
+            // runs for both CLOSED and NOW_CLOSED. 
+            executeNowClosed(); 
+            break; 
+        }
+
+    2. To be able to fall through, using a CONTINUE statement and a LABEL: 
+        Example: 
+        var command = 'CLOSED'; 
+        switch (command) {
+          case 'CLOSED': 
+           executeClosed(); 
+           continue nowClosed; 
+           // Continues executing at the nowClosed label.
+
+          nowClosed: 
+          case 'NOW_CLOSED': 
+           // runs for both CLOSED and NOW_CLOSED. 
+            executeNowClosed(); 
+             break; 
+        }
  6. assert 
  
