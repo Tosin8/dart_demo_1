@@ -372,3 +372,10 @@ THROW
   
   Example: 
    throw FormatException('Expected at least 1 section'); 
+
+   Objects can also be throw: 
+    Example: 
+     throw 'Out of Illams!'; 
+
+CATCH 
+Catching or capturing an exception stops the exception from propagatiing. Catching an exception gives a chance to handle it. 
