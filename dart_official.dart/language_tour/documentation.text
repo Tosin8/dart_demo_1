@@ -286,6 +286,12 @@ CONTROL FLOW STATEMENTS
     } while (!atEndOfPage()); 
 
  4. break and continue - using BREAK to stop looping and CONTINUE to skip to the next iteration.  
+     Example: 
+     
+     while (true) {
+      if (shutDownRequested()) break; 
+      processIncomingRequests(); 
+     }
  5. switch and case 
  6. assert 
  
