@@ -365,3 +365,10 @@ CONTROL FLOW STATEMENTS
 
 
 EXCEPTIONS 
+ They are errors showing that something unexpected happened. Dart provides exception and error types. Dart program can throw any non null object. 
+
+THROW
+ throwing or raising an exception
+  
+  Example: 
+   throw FormatException('Expected at least 1 section'); 
