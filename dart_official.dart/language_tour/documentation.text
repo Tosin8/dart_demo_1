@@ -355,5 +355,6 @@ CONTROL FLOW STATEMENTS
             executeNowClosed(); 
              break; 
         }
- 6. assert 
+ 6. assert - it is used when debugging code, letting you test if a condition in the code returns TRUE , if not the program will 
+              raise an AssertionError. 
  
