@@ -410,3 +410,15 @@ EXCEPTIONS
     }
 
   3. Finally : to ensure that some code runs whether or not an exception is thrown, using a FINALLY clause. 
+
+    Example: 
+     try {
+      breedMoreLiamas(); 
+     } catch (e) {
+      print('Error: $e'); // handle the exception first. 
+     } finally {
+      cleanLiamas();  // then clean up. 
+     }
+
+
+ CLASSES 
