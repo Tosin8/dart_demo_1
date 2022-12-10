@@ -447,3 +447,22 @@ EXCEPTIONS
        var a = p?.y; 
 
     2. USING CONSTRUCTORS 
+        Object can be created using a constructor, it can either be CLASSNAME or CLASSNAME.IDENTIFIER. Declaring a constructor
+        by creating a function with the same name as its class. The most common form of constructor , the generative constructor
+        creates a new instance of a class. 
+
+        Example: 
+         class Point{
+          double x = 0; 
+          double y = 0; 
+
+          Point(double x, double y) {
+            // see the initializing formal parameter for a better way. 
+            // to initialize instance variables. 
+
+            this.x = x; 
+            this.y = y; 
+          }
+         } 
+         // The THIS  keyword refers to the current instance. - use this only when there is a name conflict, 
+         // otherwise , dart style omits the 'this'. 
