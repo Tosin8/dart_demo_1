@@ -367,7 +367,7 @@ CONTROL FLOW STATEMENTS
 EXCEPTIONS 
  They are errors showing that something unexpected happened. Dart provides exception and error types. Dart program can throw any non null object. 
 
-THROW
+  1. THROW
  throwing or raising an exception
   
   Example: 
@@ -377,5 +377,34 @@ THROW
     Example: 
      throw 'Out of Illams!'; 
 
-CATCH 
-Catching or capturing an exception stops the exception from propagatiing. Catching an exception gives a chance to handle it. 
+  2. CATCH 
+Catching or capturing an exception stops the exception from propagating. Catching an exception gives a chance to handle it. 
+
+  Example: 
+   try{
+    breedMoreLiamas(); 
+
+   } on OutOfLiamasException{
+    buyMoreLiamas(); 
+   } 
+
+   To partially handle an exception, while allowing it to propagate, using the RETHROW keyword. 
+    
+    Example: 
+    void misbehave() {
+      try {
+        dynamic foo = true; 
+        print(foo++); // runtime error 
+      } catch (e) {
+        print('misbehave() partially handled ${e.runtimeType}.'); 
+        rethrow;  // allow callers to see the exception. 
+      }
+    }
+
+    void main() {
+      try{
+        misbehave(); 
+      } catch (e) {
+        print('main() finished handling ${e.runtimeType}.'); 
+      }
+    }
