@@ -422,3 +422,28 @@ EXCEPTIONS
 
 
  CLASSES 
+  Dart is an object oriented language with classes and mixin based inheritance. Every object is an instance of a class, and all classes except null
+  descend from Object. 
+
+  1. USING CLASS MEMBERS
+      Object have members consisting of functions and data (methods and instance variables respectively). 
+      When a method is called, it's been invoke with an object, the method has acceess to that object
+      functions and data. 
+
+      Using a dot(.) to refer to an instance variable or method: 
+
+      Example: 
+       var p = Point(2,2); 
+       // getting the value of y. 
+       assert(p.y == 2); 
+
+       // invoke distaceTo() to p.
+       double distance = p.distanceTo(Point(3,3)); 
+
+       Using '?.' instead of '.' to avoid an exception when the leftmost operand is null. 
+
+       Example: 
+       // if p is non-null ,set a variable equal to its y value. 
+       var a = p?.y; 
+
+    2. USING CONSTRUCTORS 
