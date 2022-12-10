@@ -378,7 +378,7 @@ EXCEPTIONS
      throw 'Out of Illams!'; 
 
   2. CATCH 
-Catching or capturing an exception stops the exception from propagating. Catching an exception gives a chance to handle it. 
+  Catching or capturing an exception stops the exception from propagating. Catching an exception gives a chance to handle it. 
 
   Example: 
    try{
@@ -408,3 +408,5 @@ Catching or capturing an exception stops the exception from propagating. Catchin
         print('main() finished handling ${e.runtimeType}.'); 
       }
     }
+
+  3. Finally : to ensure that some code runs whether or not an exception is thrown, using a FINALLY clause. 
