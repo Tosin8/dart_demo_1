@@ -466,3 +466,6 @@ EXCEPTIONS
          } 
          // The THIS  keyword refers to the current instance. - use this only when there is a name conflict, 
          // otherwise , dart style omits the 'this'. 
+
+         DEFAULT CONSTRUCTORS
+         A default constructor is provided by default, and has not arguments and invokes the no-argument constructor in the superclass. 
