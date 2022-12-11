@@ -1,0 +1,4 @@
+// Tour of the core libraries
+
+1. DART:CORE - built in types, collections and other core functionality. Automatically imported into every dart program. 
+2. DART:ASYNC - support for asynchronous programming, with classes as FUTURE and STREAM. 

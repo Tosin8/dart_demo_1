@@ -500,3 +500,21 @@ EXCEPTIONS
 
   METHODS 
   They are functions that provide behavior for an object. 
+
+   INSTANCE METHODS 
+   Instance methods on objects can access instance variables and THIS. The DISTANCETO() method in the following. 
+
+   Example: 
+   import 'dart:math'; 
+
+   class Point{
+    final double x; 
+    final double y; 
+
+    Point(this.x, this.y); 
+    double distaceTo(Point other) {
+      var dx = x - other.x; 
+      var dy = y - other.y; 
+      return sqrt(dx * dx + dy * dy); 
+    }
+   }
