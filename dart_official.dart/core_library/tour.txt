@@ -23,3 +23,9 @@ COMMON COLLECTION METHODS:
 
    // specify the month and day 
      y2k = DateTime(2000, 1, 2); // January 2, 2000
+
+
+ASYNC program
+ 1. async 
+ 2. future
+ 3. await 
