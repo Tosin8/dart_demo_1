@@ -469,3 +469,34 @@ EXCEPTIONS
 
          DEFAULT CONSTRUCTORS
          A default constructor is provided by default, and has not arguments and invokes the no-argument constructor in the superclass. 
+
+         NAMED CONSTRUCTORS
+         Used a named constructor to implement multiple constructor for a class or to provide extra clarity. 
+
+         Example: 
+         const double xOrigin = 0; 
+         const double yOrigin = 0; 
+         class Point{
+          final double x; 
+          final double y; 
+
+          Point(this.x , this.y); 
+
+          // Named constructor
+          Point.origin()
+                    : x = xOrigin, 
+                      y = yOrigin; 
+         }
+
+       INVOKING A NON DEFAULT SUPERCLASS CONSTRUCTOR
+       By default, a constructor in a subclass calls the superclass unnamed, no argument constructor. The superclass constructor
+       is called at the beginning of the constructor body. If an initializer list is also being used, it executes before teh 
+       superclass is called. 
+
+       Using the order of execution: 
+         * initializer list
+         * superclass no arg constructor
+         * main class no arg constructor
+
+  METHODS 
+  They are functions that provide behavior for an object. 
